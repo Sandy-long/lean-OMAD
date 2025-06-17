@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>OMAD饮食（一日一餐）</title>
+<style>
+  body {
+    font-family: "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px 40px;
+    line-height: 1.6;
+    background: #fff8f0;
+    color: #5a3e1b;
+  }
+  h1 {
+    text-align: left;
+    color: #d2691e;
+    margin-bottom: 0.5rem;
+  }
+  h2 {
+    color: #d2691e;
+    
+    padding-left: 10px;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff3e6;
+    box-shadow: 0 0 8px #f0c59d;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  thead {
+    background: #f4a261;
+    color: #fff;
+  }
+  th, td {
+    border: 1px solid #f0c59d;
+    padding: 10px 12px;
+    vertical-align: top;
+  }
+  th {
+    text-align: left;
+    font-weight: 600;
+  }
+  td {
+    font-size: 0.95em;
+    color: #5a3e1b;
+  }
+  tbody tr:hover {
+    background-color: #ffe5cc;
+  }
+  .intro {
+    background: #fff3e6;
+    border-left: 5px solid #f4a261;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    color: #6b4b2a;
+  }
+  .emoji {
+    font-size: 1.3em;
+    margin-right: 6px;
+  }
+  ul {
+    padding-left: 18px;
+    margin: 0;
+  }
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+      max-width: 100%;
+    }
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+    thead tr {
+      display: none;
+    }
+    tr {
+      margin-bottom: 1.2rem;
+      background: #fff3e6;
+      border-radius: 8px;
+      box-shadow: 0 0 5px #f0c59d;
+      padding: 10px;
+    }
+    td {
+      border: none;
+      padding-left: 50%;
+      position: relative;
+      font-size: 0.9em;
+    }
+    td::before {
+      position: absolute;
+      left: 12px;
+      top: 10px;
+      width: 45%;
+      white-space: nowrap;
+      font-weight: 600;
+      color: #d2691e;
+      content: attr(data-label);
+    }
+    .intro {
+      font-size: 1em;
+      padding: 12px 15px;
+    }
+  }
+  h1, h2 {
+    font-size: 1.8rem; 
+    color: #333;
+    padding-left: 20px;
+  }
+
+  h1 {
+    position: relative;
+  }
+
+ .full-line {
+  width: 100vw;                         /* 拉满整个视口宽度 */
+  margin-left: calc(-50vw + 50%);       /* 偏移以抵消容器居中 */
+  border: none;
+  border-top: 2px solid #ccc;           /* 自定义颜色和粗细 */
+}
+ 
+
+ 
+</style>
+</head>
+<body>
+<header style="position: relative; padding-bottom: 12px; margin-bottom: 30px; text-align: center;">
+  <h0 style="font-size: 2.4em; color: #b35300; font-weight: 700; position: relative; z-index: 2; display: inline-block; background: rgba(255, 248, 240, 0.3); padding: 0 12px;">
+    OMAD饮食（一日一餐）指南
+  </h0>
+  <!-- 底部横线 -->
+  <div style="
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #f4a261;
+    z-index: 1;
+  "></div>
+</header>
+
+<h1>🔥 间歇性禁食的益处</h1>
+<table>
+  <thead>
+    <tr>
+      <th>益处</th>
+      <th>说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td data-label="益处">减脂</td><td data-label="说明">胰岛素分泌减少，身体用脂肪释放能量来补偿；基础代谢率提高，更有效率地燃烧脂肪</td></tr>
+    <tr><td data-label="益处">省时间</td><td data-label="说明">减少用餐准备时间，可将时间用于学习或休息</td></tr>
+    <tr><td data-label="益处">提高生产力</td><td data-label="说明">饥饿状态下分泌肾上腺素，使人注意力集中、精力更充沛，提高工作效率</td></tr>
+    <tr><td data-label="益处">延缓衰老，减少氧化应激</td><td data-label="说明">空腹启动自噬，有助预防癌症、糖尿病、肝病、自身免疫病等，同时延缓衰老（约16小时开始启动自噬）</td></tr>
+    <tr><td data-label="益处">改善大脑功能</td><td data-label="说明">增加有益大脑健康的蛋白和激素，提升认知功能，减少炎症</td></tr>
+    <tr><td data-label="益处">增加基础代谢率</td><td data-label="说明">禁食时提升肾上腺素与生长激素水平，提高脂肪燃烧能力，基础代谢率上升</td></tr>
+    <tr><td data-label="益处">提高胰岛素敏感性与血糖控制</td><td data-label="说明">降低胰岛素水平，解决胰岛素抵抗，避免由高糖饮食引发的慢性疾病</td></tr>
+    <tr><td data-label="益处">有助锻炼肌肉</td><td data-label="说明">禁食状态下身体释放生长激素，保护瘦体重（肌肉和骨骼）</td></tr>
+    <tr><td data-label="益处">促进肠道健康</td><td data-label="说明">空腹让肠道休息，杀死依赖糖类生存的坏菌，减少肠道炎症</td></tr>
+  </tbody>
+</table>
+
+<h2>📌 基本原则</h2>
+<div class="intro">
+  一餐必须营养全，不是吃得少，而是吃得对。<br />
+  不吃的时候彻底禁食，吃的时候吃足够，吃健康。
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>🧩 项目分类</th>
+      <th>📖 内容说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td data-label="项目分类"><span class="emoji">⏰</span>进食安排</td><td data-label="内容说明">每天只吃一顿饭，时间应固定（如早、中、晚，根据自己方便）<br />进食窗口：45分钟~1小时<br />其余23小时保持禁食（水、黑咖啡、无糖茶可喝）</td></tr>
+    <tr><td data-label="项目分类"><span class="emoji">🍽️</span>每餐营养组成</td><td data-label="内容说明">
+      <ul>
+        <li>🥩 优质蛋白：鸡蛋、鸡肉、虾、鱼、豆腐等</li>
+        <li>🥦 蔬菜纤维：深绿叶蔬菜、胡萝卜、花椰菜</li>
+        <li>🍚 复合碳水（少量）：糙米、藜麦、红薯（可选）</li>
+        <li>🥑 健康脂肪：橄榄油、牛油果、坚果、蛋黄</li>
+        <li>💊 必要时补充：维生素、矿物质、钠、镁、钾等</li>
+      </ul></td></tr>
+    <tr><td data-label="项目分类"><span class="emoji">🥚</span>高蛋白优先</td><td data-label="内容说明">每公斤体重建议摄入蛋白 1~2g<br />建议优先吃肉蛋鱼豆等高蛋白食物，再考虑碳水</td></tr>
+    <tr><td data-label="项目分类"><span class="emoji">💧</span>补充水分与电解质</td><td data-label="内容说明">全天可喝水、茶、黑咖啡<br />注意补钠、钾、镁（避免头晕、抽筋）<br />盐水/电解质水推荐使用</td></tr>
+    <tr><td data-label="项目分类"><span class="emoji">❌</span>非暴饮暴食</td><td data-label="内容说明">虽然只吃一餐，但绝不是“想吃什么就吃什么”<br />食物质量＞食物数量<br />避免高糖、高油、高精加工（如炸鸡、蛋糕）<br />避免餐后血糖暴涨，影响胰岛素和代谢稳定</td></tr>
+    <tr><td data-label="项目分类"><span class="emoji">🏃‍♀️</span>运动安排</td><td data-label="内容说明">可以在空腹时轻度运动（如步行、瑜伽）<br />若做重训/有氧，建议安排在进食前后1小时内</td></tr>
+    <tr><td data-label="项目分类"><span class="emoji">👤</span>适合人群</td><td data-label="内容说明">亚健康的人：糖尿病前期、肥胖、血脂高、睡眠不好</td></tr>
+    <tr><td data-label="项目分类"><span class="emoji">⚠️</span>不适合人群</td><td data-label="内容说明">儿童、青少年（发育期）<br />孕妇、哺乳期女性<br />糖尿病患者、低血糖易发者<br />有精神和心理疾病的人<br />有饮食失调或暴食倾向的人<br />营养不良、瘦弱的人</td></tr>
+    <tr><td data-label="项目分类"><span class="emoji">📝</span>注意事项</td><td data-label="内容说明">禁食期间仍需保证高蛋白摄入，防止肌肉流失。<br />若感到极度虚弱、头晕，应停止或调整禁食方式。</td></tr>
+  </tbody>
+</table>
+
+<h2>🧬 长期蛋白质摄入不足的影响及建议补充方案</h2>
+<div class="intro">
+  长时间蛋白质摄入不足可能出现：肌肉流失、基础代谢降低（减脂效率下降）、免疫力减弱、恢复变慢、易感疲劳、头晕
+、掉发、指甲脆弱、皮肤干燥等。<br />考虑蛋白质补充方案：
+</div>
+<table>
+  <thead>
+    <tr>
+      <th>方案</th>
+      <th>具体表现</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td data-label="方案">餐内吃足高蛋白食物</td><td data-label="具体表现">选择高蛋白食材+优先吃</td></tr>
+    <tr><td data-label="方案">餐前或餐后加蛋白粉</td><td data-label="具体表现">轻松补充20~40g蛋白质</td></tr>
+    <tr><td data-label="方案">考虑调整为“一餐+蛋白加餐”</td><td data-label="具体表现">比OMAD更灵活，效果更好</td></tr>
+    <tr><td data-label="方案">用高蛋白零食辅助</td><td data-label="具体表现">不打破禁食，补充有效</td></tr>
+    
+  </tbody>
+</table>
+
+<h2>🥩 常见富含蛋白质的天然食物清单</h2>
+<table>
+  <thead>
+    <tr>
+      <th>食物（生）</th>
+      <th>每100克蛋白质含量（约）</th>
+      <th>其他特点</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td data-label="食物">虾皮</td><td data-label="蛋白含量">50g</td><td data-label="特点">低脂肪，高蛋白，高钙</td></tr
+	<tr><td data-label="食物">腐竹</td><td data-label="蛋白含量">45g</td><td data-label="特点">植物蛋白，适合素食者</td></tr>
+	<tr><td data-label="食物">黄豆（生）</td><td data-label="蛋白含量">36g</td><td data-label="特点">植物中最强蛋白来源，含w-6不饱和脂肪酸约10%，含异黄酮、磷脂</td></tr>
+	<tr><td data-label="食物">黑豆（生）</td><td data-label="蛋白含量">35g</td><td data-label="特点">含w-6不饱和脂肪酸约10%，含花青素、抗氧化物质</td></tr>
+	<tr><td data-label="食物">奶酪（低脂干酪）</td><td data-label="蛋白含量">25g</td><td data-label="特点">含钙、好消化</td></tr>
+	<tr><td data-label="食物">花生</td><td data-label="蛋白含量">25g</td><td data-label="特点">高脂也高蛋白，含Omega-6会导致发炎，适量</td></tr>
+    <tr><td data-label="食物">鸡胸肉（去皮）</td><td data-label="蛋白含量">23g</td><td data-label="特点">脂肪含量低，性价比高</td></tr>
+    <tr><td data-label="食物">金枪鱼（罐头）</td><td data-label="蛋白含量">23g</td><td data-label="特点">高蛋白</td></tr>
+    <tr><td data-label="食物">牛肉（瘦）</td><td data-label="蛋白含量">21g</td><td data-label="特点">铁含量高，有助于补血</td></tr>
+	<tr><td data-label="食物">杏仁</td><td data-label="蛋白含量">21g</td><td data-label="特点">零食首选，但热量高</td></tr>
+	 <tr><td data-label="食物">猪里脊肉</td><td data-label="蛋白含量">20g</td><td data-label="特点">低脂肪，高蛋白</td></tr>
+	<tr><td data-label="食物">三文鱼</td><td data-label="蛋白含量">20g</td><td data-label="特点">高蛋白，富含Omega-3脂肪酸</td></tr>
+	 <tr><td data-label="食物">虾仁</td><td data-label="蛋白含量">18g</td><td data-label="特点">低脂肪，高蛋白</td></tr>
+	 <tr><td data-label="食物">奇亚籽</td><td data-label="蛋白含量">16g</td><td data-label="特点">蛋白+Omega-3</td></tr>
+    <tr><td data-label="食物">豆腐（老）</td><td data-label="蛋白含量">15g</td><td data-label="特点">植物蛋白，适合素食者</td></tr>
+	<tr><td data-label="食物">鸡蛋</td><td data-label="蛋白含量">13g（含蛋黄）</td><td data-label="特点">含所有必需氨基酸，蛋黄富含营养</td></tr>
+	<tr><td data-label="食物">豆腐（嫩，非内脂）</td><td data-label="蛋白含量">8g</td><td data-label="特点">植物蛋白，适合素食者</td></tr>
+	
+    
+    
+   
+	
+	
+	
+	
+	
+    
+  </tbody>
+</table>
+</body>
+</html>
